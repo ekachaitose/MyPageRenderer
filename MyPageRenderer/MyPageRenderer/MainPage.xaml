@@ -3,9 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MyPageRenderer"
              x:Class="MyPageRenderer.MainPage">
-
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout
+		Orientation="Vertical"
+		VerticalOptions="Fill"
+		HorizontalOptions="Fill">
+        <Image
+			VerticalOptions="Start"
+			HorizontalOptions="Fill"
+			Source="header.png"
+			HeightRequest="90" />
+        <Button
+			Clicked="Handle_Clicked"
+			Text="PageOne -&gt; PageTwo"
+			VerticalOptions="CenterAndExpand"
+			HorizontalOptions="CenterAndExpand" />
+    </StackLayout>
 
 </ContentPage>

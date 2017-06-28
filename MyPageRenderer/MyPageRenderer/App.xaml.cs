@@ -13,7 +13,7 @@ namespace MyPageRenderer
         {
             InitializeComponent();
 
-            MainPage = new MyPageRenderer.MainPage();
+            MainPage = new NavigationPage( new MyPageRenderer.MainPage());
         }
 
         protected override void OnStart()

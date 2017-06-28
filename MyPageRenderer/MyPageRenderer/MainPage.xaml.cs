@@ -13,5 +13,10 @@ namespace MyPageRenderer
         {
             InitializeComponent();
         }
+
+        private void Handle_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
